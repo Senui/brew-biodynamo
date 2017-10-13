@@ -7,7 +7,7 @@ class ParaView < Formula
   bottle :unneeded
 
   def install
-    system "echo TODO: COPY PARAVIEW TO CORRECT DIRECTORY"
+    ohai "TODO: COPY PARAVIEW TO CORRECT DIRECTORY"
   end
 
   test do
