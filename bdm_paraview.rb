@@ -1,4 +1,4 @@
-class ParaView < Formula
+class BdmParaview < Formula
   desc "HPC Visualization Software"
   homepage "https://gitlab.kitware.com/paraview/paraview"
   url "https://cernbox.cern.ch/index.php/s/tUOz6ctoEFU3cdB/download"
