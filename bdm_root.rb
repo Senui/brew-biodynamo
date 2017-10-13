@@ -7,7 +7,7 @@ class ROOT < Formula
   bottle :unneeded
 
   def install
-    system "echo TODO: COPY ROOT TO CORRECT DIRECTORY"
+    ohai "TODO: COPY ROOT TO CORRECT DIRECTORY"
   end
 
   test do
