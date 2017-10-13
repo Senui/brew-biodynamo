@@ -7,7 +7,7 @@ class BioDynaMo < Formula
   bottle :unneeded
 
   def install
-    bin.install "BioDynaMo"
+    system "#{bin}", "./runBiodynamoTestsMain --gtest_filter=Math*"
   end
 
   test do
