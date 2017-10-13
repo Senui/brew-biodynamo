@@ -10,7 +10,7 @@ class Biodynamo < Formula
   depends_on "Senui/biodynamo/bdm_paraview => :recommended
 
   def install
-    system "echo TODO: COPY BIODYNAMO FILES TO SPECIFIED PATH"
+    ohai "TODO: COPY BIODYNAMO FILES TO SPECIFIED PATH"
   end
 
   test do
