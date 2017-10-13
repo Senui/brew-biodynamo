@@ -1,4 +1,4 @@
-class Biodynamo < Formula
+class BdmCore < Formula
   desc "Biological Dynamic Modeler"
   homepage "https://github.com/Senui/biodynamo"
   url "https://cernbox.cern.ch/index.php/s/KBdHNIYVTDzjNNn/download?path=%2F&files=biodynamo-v1.0.0.tar.gz"
