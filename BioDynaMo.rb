@@ -7,7 +7,7 @@ class BioDynaMo < Formula
   bottle :unneeded
 
   def install
-    bin.install "biodynamo"
+    bin.install "BioDynaMo"
   end
 
   test do
