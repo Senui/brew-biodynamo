@@ -7,7 +7,7 @@ class Biodynamo < Formula
   bottle :unneeded
   
   depends_on "Senui/biodynamo/bdm_root" => :build
-  depends_on "Senui/biodynamo/bdm_paraview => :recommended
+  depends_on "Senui/biodynamo/bdm_paraview" => :recommended
 
   def install
     ohai "COPY BIODYNAMO FILES TO SPECIFIED PATH"
