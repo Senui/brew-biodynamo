@@ -1,4 +1,4 @@
-class BioDynaMo < Formula
+class Biodynamo < Formula
   desc "Biological Dynamic Modeler"
   homepage "https://github.com/Senui/biodynamo"
   url "https://cernbox.cern.ch/remote.php/webdav/test/biodynamo-v1.0.0.tar.gz"
