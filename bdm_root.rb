@@ -1,4 +1,4 @@
-class ROOT < Formula
+class BdmRoot < Formula
   desc "Data Analysis Framwork"
   homepage "https://github.com/root-project/root"
   url "https://cernbox.cern.ch/index.php/s/K3ODazpS4PUjrbQ/download"
