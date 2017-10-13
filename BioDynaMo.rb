@@ -5,12 +5,15 @@ class Biodynamo < Formula
   sha256 "879f714dd9d41b2ce061019d3baa2d5ddc378ed486cd1cd0bc75841e6fede549"
 
   bottle :unneeded
+  
+  depends_on "Senui/biodynamo/bdm_root" => :build
+  depends_on "Senui/biodynamo/bdm_paraview => :recommended
 
   def install
-    system "#{bin}", "./runBiodynamoTestsMain --gtest_filter=Math*"
+    system "echo TODO: COPY BIODYNAMO FILES TO SPECIFIED PATH"
   end
 
   test do
-    system "#{bin}", "./runBiodynamoTestsMain --gtest_filter=Math*"
+    system "false"
   end
 end
