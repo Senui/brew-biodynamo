@@ -14,7 +14,7 @@ class Biodynamo < Formula
 
   def install
     mkdir "build_bdm" do
-      system "cmake", ".."
+      system "cmake .."
       system "make", "install"
     end
   end
