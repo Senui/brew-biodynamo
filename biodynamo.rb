@@ -9,8 +9,8 @@ class Biodynamo < Formula
     sha256 "197748a06fd653af7df8afaa5546257a879d350d4e0cb02b5d07f6fabee2b5f4" => :sierra
   end
   
-  depends_on "Senui/biodynamo/bdm_root" => :build
-  depends_on "Senui/biodynamo/bdm_paraview" => :recommended
+  #depends_on "Senui/biodynamo/bdm_root" => :build
+  #depends_on "Senui/biodynamo/bdm_paraview" => :recommended
 
   def install
     mkdir "build_bdm" do
