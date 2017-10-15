@@ -13,10 +13,8 @@ class Biodynamo < Formula
   #depends_on "Senui/biodynamo/bdm_paraview" => :recommended
 
   def install
-    mkdir "build_bdm" do
-      system "cmake .."
-      system "make", "install"
-    end
+    system "cmake ."
+    system "make", "install"
   end
 
   test do
