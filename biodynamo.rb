@@ -6,7 +6,7 @@ class Biodynamo < Formula
 
   bottle do
     root_url "https://github.com/Senui/biodynamo/releases/download/v0.0.9"
-    sha256 "197748a06fd653af7df8afaa5546257a879d350d4e0cb02b5d07f6fabee2b5f4" => :sierra
+    sha256 "a3d136bc640ac8fbd938f5ff96acf7945bb59a4986c8857b28331d2722b88876" => :sierra
   end
   
   #depends_on "Senui/biodynamo/bdm_root" => :build
