@@ -1,19 +1,25 @@
 class Biodynamo < Formula
   desc "Biological Dynamic Modeler"
   homepage "https://github.com/Senui/biodynamo"
-  url "https://cernbox.cern.ch/index.php/s/KBdHNIYVTDzjNNn/download?path=%2F&files=biodynamo-v1.0.0.tar.gz"
-  sha256 "879f714dd9d41b2ce061019d3baa2d5ddc378ed486cd1cd0bc75841e6fede549"
+  url "https://github.com/Senui/biodynamo/archive/v0.0.9.tar.gz"
+  sha256 "f057d60d1970d2e8e3973d77d5b7fd8ef1d9ae93d68b7d57a8f9df30e992bbbc"
 
-  bottle :unneeded
+  bottle do
+    root_url "https://github.com/Senui/biodynamo/releases/download/v0.0.9"
+    sha256 "197748a06fd653af7df8afaa5546257a879d350d4e0cb02b5d07f6fabee2b5f4"
+  end
   
   depends_on "Senui/biodynamo/bdm_root" => :build
   depends_on "Senui/biodynamo/bdm_paraview" => :recommended
 
   def install
-    ohai "COPY BIODYNAMO FILES TO SPECIFIED PATH"
+    mkdir "build_bdm" do
+      system "cmake", ".."
+      system "make", "install"
+    end
   end
 
   test do
-    system "false"
+    system "#{bin}/runBiodynamoTests"
   end
 end
