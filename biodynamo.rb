@@ -18,7 +18,7 @@ class Biodynamo < Formula
 
   # if the bottle for some reason fails, we build from source
   def install
-    prefix.install Dir["biodynamo/*"]
+    prefix.install Dir["0.0.9/*"]
   end
 
   test do
