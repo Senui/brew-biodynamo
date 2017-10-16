@@ -8,7 +8,7 @@ class BdmRoot < Formula
   bottle :unneeded
 
   def install
-    prefix.install Dir["root/*"]
+    prefix.install Dir["*"]
   end
 
   test do
