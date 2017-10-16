@@ -1,14 +1,16 @@
 class BdmParaview < Formula
   desc "HPC Visualization Software"
   homepage "https://gitlab.kitware.com/paraview/paraview"
-  url "https://cernbox.cern.ch/index.php/s/tUOz6ctoEFU3cdB/download"
-  sha256 "879f714dd9d41b2ce061019d3baa2d5ddc378ed486cd1cd0bc75841e6fede549"
+  url "https://cernbox.cern.ch/index.php/s/BbFptgxo2K565IS/download?path=%2F&files=paraview-5.4_macos64_clang81.tar.gz"
+  sha256 "1156c2bfc2145662b50017d53455200c311c287cc98469e3ec350c8462c3f910"
   version "5.4.1"
   
   bottle :unneeded
+  
+  depends_on "Senui/biodynamo/bdm_qt" => :build
 
   def install
-    ohai "TODO: COPY PARAVIEW TO CORRECT DIRECTORY"
+    prefix.install Dir["*"]
   end
 
   test do
