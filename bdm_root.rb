@@ -13,7 +13,7 @@ class BdmRoot < Formula
   # symlink into /usr/local/[bin | lib | share | include | ..]
   def install
     system "mkdir -p /opt/biodynamo/third_party/root"
-    system "cp * /opt/biodynamo/third_party/root"
+    system "cp -R * /opt/biodynamo/third_party/root"
   end
 
   test do
