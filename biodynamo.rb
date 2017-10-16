@@ -19,7 +19,7 @@ class Biodynamo < Formula
   # if the bottle for some reason fails, we build from source
   def install
     prefix.install Dir["0.0.9/*"]
-    system "cp 0.0.9/share/cmake/BioDynaMoConfig.cmake /usr/local/BioDynaMoConfig.cmake"
+    system "cp /usr/local/Cellar/biodynamo/#{version}/share/cmake/BioDynaMoConfig.cmake /usr/local/BioDynaMoConfig.cmake"
   end
 
   test do
