@@ -14,7 +14,7 @@ class Biodynamo < Formula
 #   end
   
   depends_on "Senui/biodynamo/bdm_root" => :build
-  #depends_on "Senui/biodynamo/bdm_paraview" => :recommended
+  depends_on "Senui/biodynamo/bdm_paraview" => :recommended
 
   # if the bottle for some reason fails, we build from source
   def install
