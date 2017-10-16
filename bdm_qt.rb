@@ -9,7 +9,7 @@ class BdmQt < Formula
   
   def install
     system "mkdir -p /opt/biodynamo/third_party/qt"
-    system "cp * /opt/biodynamo/third_party/qt"
+    system "cp -R * /opt/biodynamo/third_party/qt"
   end
 
   test do
