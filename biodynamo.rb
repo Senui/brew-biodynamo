@@ -9,8 +9,6 @@ class Biodynamo < Formula
 
   def install
     prefix.install Dir["0.0.9/*"]
-    system "export OMP_V=`/usr/local/opt/llvm/bin/llvm-config --version`"
-    system "cp /usr/local/opt/llvm/lib/clang/${OMP_V}/include/omp.h /usr/local/Cellar/biodynamo"
   end
 
   test do
