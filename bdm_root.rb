@@ -2,7 +2,7 @@ class BdmRoot < Formula
   desc "Data Analysis Framwork"
   homepage "https://github.com/root-project/root"
   url "https://cernbox.cern.ch/index.php/s/ZW43ZpIIZBPI7xe/download"
-  sha256 "879f714dd9d41b2ce061019d3baa2d5ddc378ed486cd1cd0bc75841e6fede549"
+  sha256 "459861ba96bc89d193365a2dd4ccf994c77842d19becbe8c1d9667577d807bd1"
   version "6.10.11"
   
   bottle :unneeded
