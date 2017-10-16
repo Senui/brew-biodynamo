@@ -8,8 +8,7 @@ class BdmQt < Formula
   bottle :unneeded
   
   def install
-    system "mkdir -p /opt/biodynamo/third_party/qt"
-    system "cp -R * /opt/biodynamo/third_party/qt"
+    prefix.install Dir["*"]
   end
 
   test do
