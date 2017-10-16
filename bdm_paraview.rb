@@ -11,7 +11,7 @@ class BdmParaview < Formula
 
   def install
     system "mkdir -p /opt/biodynamo/third_party/paraview"
-    system "cp * /opt/biodynamo/third_party/paraview"
+    system "cp * -R /opt/biodynamo/third_party/paraview"
   end
 
   test do
