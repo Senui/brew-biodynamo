@@ -8,7 +8,7 @@ class BdmRoot < Formula
   bottle :unneeded
 
   def install
-    ohai "TODO: COPY ROOT TO CORRECT DIRECTORY"
+    prefix.install Dir["root/*"]
   end
 
   test do
