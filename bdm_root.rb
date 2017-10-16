@@ -7,6 +7,10 @@ class BdmRoot < Formula
   
   bottle :unneeded
 
+  # this will do:
+  # tar -zxf root.tar.gz && cd root
+  # cp root/* /usr/local/Cellar/bdm_root/#version
+  # symlink into /usr/local/[bin | lib | share | include | ..]
   def install
     prefix.install Dir["*"]
   end
