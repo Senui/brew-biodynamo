@@ -1,9 +1,9 @@
 class BdmRoot < Formula
   desc "Data Analysis Framwork"
   homepage "https://github.com/root-project/root"
-  url "https://cernbox.cern.ch/index.php/s/ZW43ZpIIZBPI7xe/download"
-  sha256 "459861ba96bc89d193365a2dd4ccf994c77842d19becbe8c1d9667577d807bd1"
-  version "6.10.11"
+  url "https://cernbox.cern.ch/index.php/s/BbFptgxo2K565IS/download?path=%2F&files=root_v6.11.01_macos64_LLVM-Clang-4.0_263508429d.tar.gz"
+  sha256 "8b2b15ede7a25e86f3cca19cba3193a96492b8564111a28db4a0e7ee3fb3a493"
+  version "6.11.01"
   
   bottle :unneeded
 
