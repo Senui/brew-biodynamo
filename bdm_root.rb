@@ -12,7 +12,7 @@ class BdmRoot < Formula
   # cp root/* /usr/local/Cellar/bdm_root/#version
   # symlink into /usr/local/[bin | lib | share | include | ..]
   def install
-    system "cp -R * /usr/local/biodynamo/third_party/root"
+    opt_prefix.install Dir["*"] 
   end
 
   test do
