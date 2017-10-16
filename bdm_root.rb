@@ -12,7 +12,7 @@ class BdmRoot < Formula
   # cp root/* /usr/local/Cellar/bdm_root/#version
   # symlink into /usr/local/[bin | lib | share | include | ..]
   def install
-    opt_prefix.install Dir["*"] 
+    prefix.install Dir["*"] 
   end
 
   test do
