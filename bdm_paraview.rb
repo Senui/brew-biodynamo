@@ -10,7 +10,8 @@ class BdmParaview < Formula
   depends_on "Senui/biodynamo/bdm_qt" => :build
 
   def install
-    prefix.install Dir["*"]
+    system "mkdir -p /opt/biodynamo/third_party/paraview"
+    system "cp * /opt/biodynamo/third_party/paraview"
   end
 
   test do
