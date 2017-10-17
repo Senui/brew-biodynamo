@@ -11,7 +11,15 @@ class Biodynamo < Formula
   depends_on "Senui/biodynamo/bdm_paraview" => :recommended
 
   def install
-    prefix.install Dir["*"]
+    (prefix + "bin").install Dir["bin/*"]
+    (prefix + "lib").install Dir["lib/*"]
+    (prefix + "include").install Dir["include/*"]
+    (prefix + "share").install Dir["share/*"]
+    (prefix + "cmake").install Dir["cmake/*"]
+    (HOMEBREW_PREFIX + "bin").install_symlink Dir[prefix + "bin/*"]
+    (HOMEBREW_PREFIX + "lib").install_symlink Dir[prefix + "lib/*"]
+    (HOMEBREW_PREFIX + "include").install_symlink Dir[prefix + "include/*"]
+    (HOMEBREW_PREFIX + "share").install_symlink Dir[prefix + "share/*"]
   end
 
   test do
