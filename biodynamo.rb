@@ -16,10 +16,10 @@ class Biodynamo < Formula
     (prefix + "include").install Dir["include/*"]
     (prefix + "share").install Dir["share/*"]
     (prefix + "cmake").install Dir["cmake/*"]
-    (HOMEBREW_PREFIX + "bin").install_symlink Dir[prefix + "bin/*"]
-    (HOMEBREW_PREFIX + "lib").install_symlink Dir[prefix + "lib/*"]
-    (HOMEBREW_PREFIX + "include").install_symlink Dir[prefix + "include/*"]
-    (HOMEBREW_PREFIX + "share").install_symlink Dir[prefix + "share/*"]
+#     (HOMEBREW_PREFIX + "bin").install_symlink Dir[prefix + "bin/*"]
+#     (HOMEBREW_PREFIX + "lib").install_symlink Dir[prefix + "lib/*"]
+#     (HOMEBREW_PREFIX + "include").install_symlink Dir[prefix + "include/*"]
+#     (HOMEBREW_PREFIX + "share").install_symlink Dir[prefix + "share/*"]
   end
 
   test do
